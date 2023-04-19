@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jwolak\\Desktop\\BlazerServerApp\\XML_Splitter\\XML_Splitter\\XML_Splitter.csproj",
+      "projectUniqueName": "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
       "projectName": "XML_Splitter",
-      "projectPath": "C:\\Users\\jwolak\\Desktop\\BlazerServerApp\\XML_Splitter\\XML_Splitter\\XML_Splitter.csproj",
+      "projectPath": "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
       "packagesPath": "C:\\Users\\jwolak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jwolak\\Desktop\\BlazerServerApp\\XML_Splitter\\XML_Splitter\\obj\\",
+      "outputPath": "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

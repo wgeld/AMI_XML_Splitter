@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8a/6AjjKLLKqT4c9pZni8c8HAjW/Jk2D/4MmBQRooefEiY2HgmXXlfePAZXREw0rSPCOr7RvqJHrIbgLPQLDJQ==",
+  "dgSpecHash": "wW+l5w1Uq2MnJBRIKVtNJbFfpD8FKK5lNPDgO1yr/gEfLkKP3b15oFccS3Z34sg0qwnRkSb28L0wByy4g/oZbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jwolak\\Desktop\\BlazerServerApp\\XML_Splitter\\XML_Splitter\\XML_Splitter.csproj",
+  "projectFilePath": "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
