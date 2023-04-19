@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wW+l5w1Uq2MnJBRIKVtNJbFfpD8FKK5lNPDgO1yr/gEfLkKP3b15oFccS3Z34sg0qwnRkSb28L0wByy4g/oZbQ==",
+  "dgSpecHash": "BTkHMayh+GGe9iH1MXRFvAm8tS0FXdmdbz/ne8HEu/zgNXsmCp/PPAzxAJSfELYhX7BADHMIzTWJAACnMR+4jg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
+  "projectFilePath": "M:\\Development\\CSharp\\MDMXMLParser3\\XML_Splitter\\XML_Splitter.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
