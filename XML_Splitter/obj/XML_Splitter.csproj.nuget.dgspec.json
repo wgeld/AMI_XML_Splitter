@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj": {}
+    "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj": {
+    "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
+        "projectUniqueName": "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
         "projectName": "XML_Splitter",
-        "projectPath": "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
-        "packagesPath": "C:\\Users\\jwolak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jwolak\\Source\\Repos\\AMI_xml_Splitter\\XML_Splitter\\obj\\",
+        "projectPath": "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
+        "packagesPath": "C:\\Users\\tgalanis\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jwolak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\tgalanis\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
