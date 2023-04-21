@@ -15,8 +15,8 @@ namespace XML_Splitter
             Stopwatch stopWatch = new Stopwatch();
 
             int index = 0;
-            string saveLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\Test_Output";
-            string xmlLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\SourceFiles";
+            string saveLocation = "D:\\Applications\\MDMIntervalDataParser\\DailyMDMDataOutput";
+            string xmlLocation = "D:\\Applications\\AMRDailyReadProcessing";
             string filePath = "";
 
             stopWatch.Start();
@@ -28,7 +28,7 @@ namespace XML_Splitter
 
                 if (date.Equals(currentDate))    // if the file's date matches the current date proceed to the following
                 {
-                    Console.WriteLine("File Found");
+                    //Console.WriteLine("File Found");
                     filePath = xmlLocation + "\\" + System.IO.Path.GetFileName(path);    // instantiate the filePath to equal the xmlLocation and the file being examined
 
                     XDocument newDoc = XDocument.Load(filePath);
@@ -46,7 +46,7 @@ namespace XML_Splitter
                         var finalDoc = new XDocument(
                              new XElement("AMRDEF", header, batch));
 
-                        finalDoc.Save($"{saveLocation}\\meterDataFile_{++index}.xml");
+                        finalDoc.Save($"{saveLocation}\\meterDataFile_{fileNameDate}_{++index}.xml");
                     }
                 }
 
