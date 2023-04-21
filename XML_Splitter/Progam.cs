@@ -15,40 +15,59 @@ namespace XML_Splitter
             Stopwatch stopWatch = new Stopwatch();
 
             int index = 0;
-            string saveLocation = "D:\\Applications\\MDMIntervalDataParser\\DailyMDMDataOutput";
-            string xmlLocation = "D:\\Applications\\AMRDailyReadProcessing";
+            string saveLocation = "\\\\Automate2101\\d\\Applications\\MDMIntervalDataParser\\DailyMDMDataOutput";
+            string xmlLocation = "\\\\Automate2101\\d\\Applications\\AMRDailyReadProcessing";
+            //string saveLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\Test_Output";
+            //string xmlLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\SourceFiles";
+
             string filePath = "";
 
             stopWatch.Start();
 
             foreach (var path in Directory.GetFiles(@xmlLocation))
             {
-                String date = GetFileDate(System.IO.Path.GetFileName(path).Substring(20));
-                String currentDate = today.ToString("MM/dd/yyyy");
+                String aaa = System.IO.Path.GetFileName(path);
+                Console.WriteLine(aaa);
 
-                if (date.Equals(currentDate))    // if the file's date matches the current date proceed to the following
+                if(!aaa.Equals("AAA_SolarAnalysis.txt"))
                 {
-                    //Console.WriteLine("File Found");
-                    filePath = xmlLocation + "\\" + System.IO.Path.GetFileName(path);    // instantiate the filePath to equal the xmlLocation and the file being examined
+                    String electric = System.IO.Path.GetFileName(path).Substring(17);
+                    electric = electric.Substring(0, 8);
+                    Console.WriteLine(electric);
 
-                    XDocument newDoc = XDocument.Load(filePath);
-
-                    var query = newDoc.Descendants("ScheduleExecution");
-                    XElement header = new XElement("ScheduleExecution", query);  // Take the Header ("ScheduleExecution") of the current XML File being examined
-
-                    newDoc.Descendants("ScheduleExecution").Remove(); // Remove the Header ("ScheduleExecution")
-
-                    int elementAmount = GetNumberOfElementsPerNewFile(newDoc);  
-
-                    // adds {elementsPerFile} elements to a new file that then saves to a folder
-                    foreach (var batch in newDoc.Root.Elements().InSetsOf(elementAmount))
+                    if (!electric.Equals("ELECTRIC"))
                     {
-                        var finalDoc = new XDocument(
-                             new XElement("AMRDEF", header, batch));
+                        String date = GetFileDate(System.IO.Path.GetFileName(path).Substring(20));
+                        String currentDate = today.ToString("MM/dd/yyyy");
+                        String fileNameDate = today.ToString("MM-dd-yyyy");
 
-                        finalDoc.Save($"{saveLocation}\\meterDataFile_{fileNameDate}_{++index}.xml");
+                        if (date.Equals(currentDate))    // if the file's date matches the current date proceed to the following
+                        {
+                            //Console.WriteLine("File Found");
+                            filePath = xmlLocation + "\\" + System.IO.Path.GetFileName(path);    // instantiate the filePath to equal the xmlLocation and the file being examined
+
+                            XDocument newDoc = XDocument.Load(filePath);
+
+                            var query = newDoc.Descendants("ScheduleExecution");
+                            XElement header = new XElement("ScheduleExecution", query);  // Take the Header ("ScheduleExecution") of the current XML File being examined
+
+                            newDoc.Descendants("ScheduleExecution").Remove(); // Remove the Header ("ScheduleExecution")
+
+                            int elementAmount = GetNumberOfElementsPerNewFile(newDoc);
+
+                            // adds {elementsPerFile} elements to a new file that then saves to a folder
+                            foreach (var batch in newDoc.Root.Elements().InSetsOf(elementAmount))
+                            {
+                                var finalDoc = new XDocument(
+                                     new XElement("AMRDEF", header, batch));
+
+                                finalDoc.Save($"{saveLocation}\\meterDataFile_{fileNameDate}_{++index}.xml");
+                            }
+                        }
                     }
+                
                 }
+                
 
             }
 
