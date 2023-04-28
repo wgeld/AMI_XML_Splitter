@@ -11,7 +11,7 @@ Currently, the system accepts XML files relating to gas meter readings. This pro
  - The system examines each file from the desired path
  - If a file matches that of the current date the system will extract the necessary "Header" information and store the contents within the "Header" accordingly. The "Header" attribute values are to also be stored as variables
  - The "Header" and its contents are removed from the XML file
- - The system counts the number of Elements remaining in the XML file and makes the necessary calculations to determine how many lines are applied in each new file. This is to ensure the number of files does not exceed 24.
+ - The system counts the number of Elements remaining in the XML file and makes the necessary calculations to determine how many lines are applied in each new file. This is to ensure the number of files being created does not exceed 24.
  - The system creates the new smaller XML files. This is done by attaching all the stored "Header" information to a batch of Elements, previously calculated. 
  
  ## Technologies applied
