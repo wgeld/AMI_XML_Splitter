@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Xml;
 using System.Xml.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace XML_Splitter
 {
@@ -13,20 +14,33 @@ namespace XML_Splitter
     {
         static void Main(string[] args)
         {
+            try {
+
+            Console.WriteLine("*** MDM XML Data Parser - Starting ***");
+
             DateTime today = DateTime.Today;
             Stopwatch stopWatch = new Stopwatch();
 
             int index = 0;
-            string saveLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\Test_Output";
-            string xmlLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\SourceFiles";
-            string filePath = "";
+                // Files on z:
+                //            string saveLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\Test_Output";
+                //            string xmlLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\SourceFiles";
+                // Files on the production MDM server
+ //           string saveLocation = "\\\\172.16.11.151\\FileExchange$\\Import\\Elster"; // Production
+                //string saveLocation = "\\\\automate2101\\D\\Applications\\MDMIntervalDataParser\\DailyMDMDataOutput"; // Testing
+                string saveLocation = ".\\DailyMDMDataOutput"; // Testing
+                string xmlLocation = "\\\\automate2101\\D\\Applications\\AMRDailyReadProcessing\\FullIntDataSource";
+                string filePath = "";
+    
+                stopWatch.Start();
 
-            stopWatch.Start();
+             Console.WriteLine(">> MDM XML Data Parser - Entering file loop");
 
             foreach (var path in Directory.GetFiles(@xmlLocation))
             {
                 String date = GetFileDate(System.IO.Path.GetFileName(path).Substring(20));
                 String currentDate = today.ToString("MM/dd/yyyy");
+                String fileNameDate = today.ToString("MM-dd-yyyy");
 
                 if (date.Equals(currentDate))    // if the file's date matches the current date proceed to the following
                 {
@@ -80,15 +94,25 @@ namespace XML_Splitter
                         var finalDoc = new XDocument(
                              new XElement("AMRDEF", new XAttribute("Purpose", amrdefPurpose), new XAttribute("version", amrdefVersion), new XAttribute("CreationTime", amrdefCreationTime), header, batch));
 
-                        finalDoc.Save($"{saveLocation}\\meterDataFile_{++index}.xml");
+//                        finalDoc.Save($"{saveLocation}\\meterDataFile_{++index}.xml");
+                        finalDoc.Save($"{saveLocation}\\meterDataFile_{fileNameDate}_{++index}.xml");
                     }
                 }
 
             }
 
-            stopWatch.Start();
+             Console.WriteLine(">> MDM XML Data Parser - File loop complete");
 
- /****************************************************************************/
+
+             Console.WriteLine("*** MDM XML Data Parser - Complete ***");
+
+             stopWatch.Start();
+
+            }
+            catch (Exception e) { Console.WriteLine("{0} Exception caught.", e); }
+
+
+            /****************************************************************************/
             /*The Following modifies the file's date in the format MM/dd/yyy*/
             static string GetFileDate(string fileDate)
             {
