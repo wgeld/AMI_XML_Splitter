@@ -1,0 +1,20 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/XML_Splitter/.vs/*
+/XML_Splitter/.vs/XML_Splitter/FileContentIndex/600042ba-b43c-4adc-baad-6b7de3f75d11.vsidx
+/XML_Splitter/.vs/XML_Splitter/FileContentIndex/d8d5d3da-5a5c-4b78-a711-36b4e0d63449.vsidx
+/XML_Splitter/.vs/XML_Splitter/v17/.wsuo
+/XML_Splitter/.vs/ProjectSettings.json
+/XML_Splitter/.vs/slnx.sqlite
+/XML_Splitter/.vs/VSWorkspaceState.json
+/XML_Splitter/bin/Debug/net7.0/XML_Splitter.dll
+/XML_Splitter/bin/Debug/net7.0/XML_Splitter.pdb
+/XML_Splitter/obj/Debug/net7.0/ref/XML_Splitter.dll
+/XML_Splitter/obj/Debug/net7.0/XML_Splitter.assets.cache
+/XML_Splitter/obj/Debug/net7.0/XML_Splitter.dll
+/XML_Splitter/obj/Debug/net7.0/XML_Splitter.genruntimeconfig.cache
+/XML_Splitter/obj/Debug/net7.0/XML_Splitter.pdb
+/XML_Splitter/obj/Release/net7.0/XML_Splitter.assets.cache
+/XML_Splitter/obj/Debug/net7.0/refint/XML_Splitter.dll

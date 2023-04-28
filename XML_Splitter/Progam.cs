@@ -83,6 +83,7 @@ namespace XML_Splitter
             /*The Following modifies the file's date in the format MM/dd/yyy*/
             static string GetFileDate(string fileDate)
             {
+
                 String date = fileDate;
                 date = date.Replace('_', '/');
                 date = date.Substring(0, 10);
