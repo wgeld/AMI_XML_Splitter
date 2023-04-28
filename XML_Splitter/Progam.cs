@@ -23,7 +23,7 @@ namespace XML_Splitter
             //string saveLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\Test_Output";
             //string xmlLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\SourceFiles";
 
-            string saveLocation = ".\\DailyMDMDataOutput"; // Testing
+            string saveLocation = ".\\DailyMDMDataOutput"; 
             string xmlLocation = "\\\\automate2101\\D\\Applications\\AMRDailyReadProcessing\\FullIntDataSource";
 
             string filePath;
@@ -101,7 +101,7 @@ namespace XML_Splitter
                 return elementAmount;
             }
 
-            /************************************************************************************************************/
+            /************************************************************************************************/
             /* Uses GetNumberOfElementsPerFile() function to calculate how many lines are to be added to each file. The 
              * function then begins creating the smaller XML files */ 
 
