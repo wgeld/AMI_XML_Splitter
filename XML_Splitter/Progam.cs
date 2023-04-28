@@ -19,11 +19,12 @@ namespace XML_Splitter
             
             String date;
 
-            string saveLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\Test_Output";
-            string xmlLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\SourceFiles";
+            // These Paths are used for testing purposes
+            //string saveLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\Test_Output";
+            //string xmlLocation = "Z:\\IT_Development\\Projects\\Active\\MDMIntervalDataParcer\\SourceFiles";
 
-            //string saveLocation = ".\\DailyMDMDataOutput"; // Testing
-            //string xmlLocation = "\\\\automate2101\\D\\Applications\\AMRDailyReadProcessing\\FullIntDataSource";
+            string saveLocation = ".\\DailyMDMDataOutput"; 
+            string xmlLocation = "\\\\automate2101\\D\\Applications\\AMRDailyReadProcessing\\FullIntDataSource";
 
             string filePath;
 
@@ -90,7 +91,7 @@ namespace XML_Splitter
 
             /***************************************************************************/
             /* Below Counts the Original XML file's Elements which then determines, and returns, how many
-             * Elements each new file showed display */
+             * Elements each new file should display */
             static int GetNumberOfElementsPerNewFile(XDocument newDoc)
             {
                 double scalarVariableCount = newDoc.Root.Elements().Count();
@@ -101,7 +102,8 @@ namespace XML_Splitter
             }
 
             /************************************************************************************************/
-            /* ***/
+            /* Uses GetNumberOfElementsPerFile() function to calculate how many lines are to be added to each file. The 
+             * function then begins creating the smaller XML files */ 
 
             static void CreateFiles(XDocument newDoc, Amrdef amrdef, XElement scheduleExecutionElement, string saveLocation)
             {
