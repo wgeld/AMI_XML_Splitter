@@ -18,3 +18,5 @@
 /XML_Splitter/obj/Debug/net7.0/XML_Splitter.pdb
 /XML_Splitter/obj/Release/net7.0/XML_Splitter.assets.cache
 /XML_Splitter/obj/Debug/net7.0/refint/XML_Splitter.dll
+*.vsidx
+/.vs/XML_Splitter/FileContentIndex/49b05015-88ca-48eb-8a03-d1c848494575.vsidx
