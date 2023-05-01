@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f9Urja/dxtyR48peSr7t7FCtmbX2uTBqQqMGGQfxFZa9t6ibNKvndbLXBuSc+M9g2qZ9RwtlYBHYvydZ6qwjfg==",
+  "dgSpecHash": "MVBVstrHG/+xNr3zLZPB6Rz72+XP14on3oz072xMCdeNqYYAqi6C9P6VyAeYlTKhXzj6k+j76wG34/LdvZyefw==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
+  "projectFilePath": "C:\\Projects\\NET\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

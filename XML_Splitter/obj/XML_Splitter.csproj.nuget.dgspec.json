@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj": {}
+    "C:\\Projects\\NET\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj": {
+    "C:\\Projects\\NET\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
+        "projectUniqueName": "C:\\Projects\\NET\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
         "projectName": "XML_Splitter",
-        "projectPath": "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
+        "projectPath": "C:\\Projects\\NET\\AMI_xml_Splitter\\XML_Splitter\\XML_Splitter.csproj",
         "packagesPath": "C:\\Users\\tgalanis\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\VSProjects\\AML_xml_Splitter\\XML_Splitter\\obj\\",
+        "outputPath": "C:\\Projects\\NET\\AMI_xml_Splitter\\XML_Splitter\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\tgalanis\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -60,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
