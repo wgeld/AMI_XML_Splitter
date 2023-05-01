@@ -1,0 +1,22 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+.vs/*
+/XML_Splitter/.vs/*
+/XML_Splitter/obj/Debug/net7.0/*
+/XML_Splitter/obj/Release/net7.0/*
+/XML_Splitter/.vs/XML_Splitter/v17/.wsuo
+/XML_Splitter/.vs/ProjectSettings.json
+/XML_Splitter/.vs/slnx.sqlite
+/XML_Splitter/.vs/VSWorkspaceState.json
+/XML_Splitter/bin/Debug/net7.0/XML_Splitter.dll
+/XML_Splitter/bin/Debug/net7.0/XML_Splitter.pdb
+/XML_Splitter/obj/Debug/net7.0/ref/XML_Splitter.dll
+/XML_Splitter/obj/Debug/net7.0/XML_Splitter.assets.cache
+/XML_Splitter/obj/Debug/net7.0/XML_Splitter.dll
+/XML_Splitter/obj/Debug/net7.0/XML_Splitter.genruntimeconfig.cache
+/XML_Splitter/obj/Debug/net7.0/XML_Splitter.pdb
+/XML_Splitter/obj/Release/net7.0/XML_Splitter.assets.cache
+/XML_Splitter/obj/Debug/net7.0/refint/XML_Splitter.dll
+*.vsidx
